@@ -8,7 +8,7 @@ from nltk.stem.porter import PorterStemmer
 
 ps = PorterStemmer()
 
-
+nltk.download('punkt')
 def transform_text(text):
     text = text.lower()
     text = nltk.word_tokenize(text)
